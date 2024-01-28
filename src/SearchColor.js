@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SearchColor = ( {color, setColor} ) => {
+const SearchColor = ( {color, handleColor} ) => {
 
     return (
         <form action="search" onSubmit={(e) => e.preventDefault()}>
@@ -12,7 +12,7 @@ const SearchColor = ( {color, setColor} ) => {
                 role = "searchbox"
                 placeholder = 'Search color...'
                 value = {color}
-                onChange = {(e) => setColor(e.target.value)}
+                onChange = {(e) => handleColor(e.target.value)}
                 required
             />
         </form>
