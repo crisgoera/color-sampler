@@ -1,8 +1,8 @@
 
-const ColorDisplay = ( {color} ) => {
+const ColorDisplay = ( {color, fontColor} ) => {
 
     return (
-        <div className='square' style = {{backgroundColor: color}}>
+        <div className='square' style = {{backgroundColor: color, color: fontColor}}>
             <p>{color}</p>
         </div>
     )
